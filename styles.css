@@ -522,7 +522,7 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
 .projects-grid article
 {
     background-color: var(--color-section);
-    padding: 1.5rem;
+    padding: 2.5rem;
     box-shadow: var(--shadow-default);
     color: var(--color-text);
     border-radius: 20px;
@@ -636,9 +636,6 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
     object-fit: cover;
 }
 
-.projects-item{
-    padding-bottom: 0.5rem;
-}
 
 .project-image 
 {

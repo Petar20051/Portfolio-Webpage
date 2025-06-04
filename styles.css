@@ -27,6 +27,11 @@ header
     height: auto;
     flex-wrap: wrap;
 }
+
+.specific.name
+{
+    font-style: italic;
+}
 nav
 {
     display: flex;

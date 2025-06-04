@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Petar Petrov - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh//devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
     <header>
         <nav>
-            <img class = 'logo' src="images/Petar-logo.jpeg" alt="logo">
+            <img class = 'logo' src="images/Petar-logo.jpeg" alt="Petar Petrov Logo">
             <ul>
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -26,9 +28,10 @@
             <div class="hero content">
                 <h1>Hi, I'm <span class="specific name">Petar</span></h1>
              <h2>A developer who turns ideas into digital reality</h2>
-             <p>Thanks for stopping by! This portfolio is a reflection of my journey as a developer - and I'm grateful you're taking a moment to check it out</p>
+             <p>This portfolio showcases my growth as a developer - thank you for the time to explore it!</p>
              <div class="cta-buttons">
                 <a href="#projects" class="btn-project">View my work</a>
+                <a href="files" download class="btn-project">Download CV</a>
                 <a href="#about" class="btn-arrow" >Get to know me better ↓</a>
              </div>
             </div>
@@ -36,30 +39,29 @@
         <section id="about">
             <article class="content">
             <h2>About Me</h2>
-            <p>Hello! I'm Petar Petrov, a passionate Full Stack Developer with a love for creating dynamic and useful web applications. I have experience in both front-end and back-end development, and I enjoy working on projects that challenge my skills and creativity.</p>
-            <p>In my free time, I like to explore new technologies, contribute to open-source projects, and improve my coding skills.</p>
+            <p>Hello! I'm Petar Petrov, a passionate Full Stack Developer who enjoys building powerful, user-focused web applications. I specialize in both front-end and back-end technologies, with a strong focus on clean architecture and modern development practices</p>
+            <p>Outside of coding, I explore new frameworks, contribute to open-source projects, and learn how technology can solve real-world problems.</p>
+            <p>My goal is to create software that not only meets user needs but also inspires and empowers them. I believe in continuous learning and always strive to improve my skills and knowledge.</p>
             </article>
             <figure class="image">
-                <img src="images/Petar-picture.jpeg" alt="Profile Picture">
+                <img src="images/Petar-picture.jpeg" alt="Portrait of Petar Petrov">
             </figure>
         </section>
         <section id="skillsandtools">
             <h2>Skills & Tools</h2>
-            <p>Here are some of the technologies and tools I work with:</p>
+            <p>Here are some of the technologies and tools I actively work with:</p>
            <div class="skills-carousel">
             <ul>
-                <li>C#</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Node.js</li>
-                <li>ASP.NET MVC</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Bootstrap</li>
-                <li>MSSQL</li>
-                <li>MongoDB</li>
-                <li>Git</li>
-                <li>Docker</li>
+                <li><i class="devicon-csharp-plain colored"></i><span>C#</span></li>
+                <li><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></li>
+                <li><i class="devicon-react-plain colored"></i><span>React</span></li>
+                <li><i class="devicon-dotnetcore-plain colored"></i><span>.NET Core</span></li>
+                <li><i class="devicon-html5-plain colored"></i><span>HTML</span></li>
+                <li><i class="devicon-css3-plain colored"></i><span>CSS</span></li>
+                <li><i class="devicon-bootstrap-plain colored"></i><span>Bootstrap</span></li>
+                <li><i class="devicon-microsoftsqlserver-plain colored"></i><span>MSSQL</span></li>
+                <li><i class="devicon-github-original colored"></i><span>Git</span></li>
+                <li><i class="devicon-docker-plain colored"></i><span>Docker</span></li>
             </ul>
               </div>
             <p>Soft skills:</p>
@@ -76,16 +78,22 @@
             <h2>Education</h2>
             <div class="education-items">
             <article class="education-item">
-                <h3>Software University</h3>
-                <p>C# Web Developer</p>
-                <p>Graduated: December 2024</p>
-                <p>Explaining the whole program</p>
+                <div class="educationTitle">
+                <h3>Software University (SoftUni)</h3>
+                <img src="images/SoftUni logo.png" alt="SoftUni Logo" class="softuni-logo">
+                </div>
+                <p class="edType">C# Web Developer Program</p>
+                <p class="timeline">Graduated: December 2024</p>
+                <p class="educationContent">This intensive program offered a complete path through software development with a focus on the Microsoft stack. It included OOP in C#, working with relational databases using SQL and Entity Framework, and building full-stack web apps using ASP.NET Core MVC.</p>
             </article>
             <article class="education-item">
-                <h3>University of Economics,Varna</h3>
-                <p>Bachelor in Computer Science (In Progress)</p>
-                <p>2024-Present</p>
-                <p>Explaining the whole program</p>
+                <div class="educationTitle">
+                <h3>University of Economics - Varna</h3>
+                <img src="images/UELogo.jpeg" alt="UE Varna Logo" class="ue-varna-logo">
+                </div>
+                <p class="edType">Bachelor in Computer Science (In Progress)</p>
+                <p class="timeline">2024-Present</p>
+                <p class="educationContent">The program provides a strong foundation in computer science, covering data structures, algorithms, software engineering and IT systems. It combines theory with hands-on experience in both programming and business-related technologies.</p>
             </article>
             </div>
         </section>
@@ -96,47 +104,41 @@
              <article class="project-item">
                 
                 <h3>Event Management System</h3>
-                <p>Solution for managing every stage of events-from registration to insightful analytics.Implements ASP.Net Identity for robust access control.Combines Entity Farmework,SQL Server & Stripe for seamless transactions</p>
-                <p class="project-tech">C#, ASP.NET MVC, MSSQL,Entity Framework,Stripe,Razor</p>
-                <a href="#" class="btn-project">View Project</a>
-               
-                </article>
-                <figure class="project-image">
-                    <img src="images/project" alt="Project Image">
-                </figure>
+                <p class="project-description">A complete solution for managing events-from registration to  analytics.It implements ASP.NET Identity for access control, uses Entity Framework and SQL Server for data management and integrates Stripe for seamless payment handling.</p>
+                <p class="project-tech">Tech Stack: C#, ASP.NET MVC, MSSQL, Entity Framework, Stripe, Razor</p>
+                <a href="https://github.com/Petar20051/EventManagementSystem" class="btn-project">View Project</a>
+             </article>
+             <figure class="project-image">
+                    <img src="images/Petar-picture.jpe" alt="Event Management System Screenshot"/>
+             </figure>
              
-
-             <article class="project-item">
+             <figure class="project-image swap">
+                    <img src="images/Petar-picture.jpe" alt="Real-Time Collaboration Tool Screenshot">
+             </figure>
+             <article class="project-item swap">
                 
                 <h3>Real-Time Collaboration Platform</h3>
-                <p>A cutting-edge digital workspace that empowers dynamic teamwork.Enables realt-time document editing, messaging and conferencing.Powered by Node.js and Socket.IO for instant data exchange.Leverages JWT for secure sessions and integrates WebRTC for pristine audio.</p>
-                <p class="project-tech">Node.js, React, JWT ,WebRTC,Socket.IO,MongoDB</p>
-                <a href="#" class="btn-project">View Project</a>
-               
-                 </article>
-                <figure class="project-image">
-                    <img src="images/project1.jpg" alt="Project Image">
-                </figure>
+                <p class="project-description">A modern digital workspace that empowers dynamic teamwork.Enables reat-time document editing, messaging and conferencing.Powered by Node.js and Socket.IO for instant data exchange.Leverages JWT for secure sessions and integrates WebRTC for pristine audio.</p>
+                <p class="project-tech">Tech Stack: Node.js, React, JWT, WebRTC, Socket.IO, MongoDB</p>
+                <a href="https://github.com/Petar20051/real-time-collaboration-tool" class="btn-project">View Project</a>
              </article>
              <article class="project-item">
                 <h3>AI-Powered Finance Tracker</h3>
-                <p>An AI-driven tool that converts raw financial data into actionable insights  for smarter budgeting.Engineered with React for compelling data visualization.Uses ML.NET for insightful expense forecasting.Integrated SignalR for proactive financial notifictions.</p>
-                <p class="project-tech">ASP.NET Core, React,ML.NET, SignalR,MSSQL</p>
-                <a href="#" class="btn-project">View Project</a>
-               
-                </article>
-                <figure class="project-image">
-                    <img src="images/project1.jpg" alt="Project Image">
-                </figure>
+                <p class="project-description">An AI-driven tool that converts raw financial data into actionable insights  for smarter budgeting.Engineered with React for compelling data visualization.Uses ML.NET for insightful expense forecasting.Integrated SignalR for proactive financial notifictions.</p>
+                <p class="project-tech">Tech Stack: ASP.NET Core, React,ML.NET, SignalR,MSSQL</p>
+                <a href="https://github.com/Petar20051/finance-tracker-frontend" class="btn-project">View Project</a>
              </article>
+             <figure class="project-image ">
+                    <img src="images/background.avif" alt="AI Finance Tracker Screenshot">
+             </figure>
             </div>
         </section>
         <section id="contacts">
             <h2>Contacts</h2>
-            <p>If you'd like to get in touch, feel free to reach out via email or connect with me on LinkedIn.</p>
+            <p>If you'd like to get in touch, feel free to reach out via email or connect with me on LinkedIn or Github.</p>
             <ul>
                 <li><i class="fa fa-envelope" style="font-size: 3rem"></i> <a href="mailto:petrovpetar20051@gmail.com">petrovpetar20051@gmail.com</a></li>
-                <li><i class="fa fa-linkedin-square" style="font-size: 3rem"></i> <a href="https://www.linkedin.com/in/petar-petrov-123456789/">Petar Petrov</a></li>
+                <li><i class="fa fa-linkedin-square" style="font-size: 3rem"></i> <a href="https://www.linkedin.com/in/petar-petrov-27a0b6356">Petar Petrov</a></li>
                 <li><i class="fa fa-github" style="font-size: 3rem"></i><a href="https://github.com/Petar20051">Petar20051</a></li>
             </ul>
         </section>
@@ -144,7 +146,7 @@
     <footer>
         <p>&copy; 2025 Petar Petrov. All rights reserved.</p>
         <div class="footer-icons">
-            <a href="#hero" aria-label="Back to top "><i class="fa fa-chevron-up" style="font-size:36px;color: darkgray;"></i></a>
+            <a href="#hero" aria-label="Back to top "><i class="fa fa-chevron-up" style="font-size:3rems;color: darkgray;"></i></a>
         </div>
     </footer>
 </body>

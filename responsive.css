@@ -192,7 +192,9 @@ transition: 0.3s ease;
     border-radius: 10px;
     box-shadow: var(--shadow-default);
     transition: none;
-     filter:grayscale(1) blur(0px) brightness(1);
+     filter:grayscale(0) blur(0) brightness(1);
+     opacity: 1;
+     scale: 1;
 }
 
 .project-item a
